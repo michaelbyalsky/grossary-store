@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ShowProducts from './productsList';
+import ShoppingCartSharpIcon from '@material-ui/icons/ShoppingCartSharp';
+import CopyrightIcon from '@material-ui/icons/Copyright';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <header className="header"><h1>My Grocery Store&nbsp;<ShoppingCartSharpIcon fontSize="large"/></h1></header>
+    <div>
+      <ShowProducts id="productsList"/>
     </div>
+    <footer className="footer">
+    <h3 className="copy"><CopyrightIcon/>Michael Byalsky</h3>
+    </footer>
+    </>
   );
 }
 

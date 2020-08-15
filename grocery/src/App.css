@@ -2,37 +2,58 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: grid;
+  text-align: center;
+  height: 15vh;
+  background-color:  rgb(224, 210, 210);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  text-align: center;
+  background-color: rgb(224, 210, 210);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background-color: rgb(224, 210, 210);
+}
+
+.main {
+display: grid;
+ grid-template-columns: repeat(2, 50%);
+ background-color: rgb(224, 210, 210);
+ justify-items: center;
+ margin: 0;
+
+}
+
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Groceries, .Basket {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  align-content: center;
+}
+
+.listItem{
+ color: transparent;
+}
+
+.listItem:hover {
+  background-color: rgb(178, 183, 189);
+}
+
+.footer {
+  display: grid;
+  background-color: black;
+  height: 10vh;
   color: white;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
